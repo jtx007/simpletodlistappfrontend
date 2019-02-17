@@ -29,6 +29,48 @@ body {
   box-shadow: 0 10px 6px -6px #777;
 }
 
+@media (max-width: 420px) {
+  .list {
+    background-color: white;
+    width: 23rem;
+    height: 33rem;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.556);
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+  }
+  .navbar {
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.584);
+    height: 3rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 10rem;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 2px auto;
+  }
+  button {
+    background: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 2.5rem;
+    width: 2rem;
+    margin: 3px auto;
+    border: none;
+    font-family: futura-pt;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+  }
+}
+
 .navbar {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.584);
