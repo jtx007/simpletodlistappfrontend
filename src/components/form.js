@@ -3,8 +3,14 @@ import React, { Component } from 'react'
 class Form extends Component {
     render() {
         return (
-            <div>
-
+            <div className="todo-form">
+                <h1>Add Todo</h1>
+                <form>
+                    <input placeholder="Add todo here"/>
+                    <p className="submit-button">
+                        <button type="submit">Submit</button>
+                    </p>
+                </form>
             </div>
         )
     }

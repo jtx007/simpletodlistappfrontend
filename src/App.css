@@ -30,7 +30,7 @@ body {
 }
 
 @media (max-width: 420px) {
-  .list {
+  .list, .todo-form {
     background-color: white;
     width: 23rem;
     height: 33rem;
@@ -42,6 +42,7 @@ body {
     -moz-box-shadow: 0 10px 6px -6px #777;
     box-shadow: 0 10px 6px -6px #777;
   }
+
   .navbar {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.584);
@@ -54,6 +55,7 @@ body {
     margin: 1rem auto;
     padding: 2px auto;
   }
+
   button {
     background: rgb(0, 0, 0);
     color: #fff;
@@ -68,6 +70,18 @@ body {
     cursor: pointer;
     transition: 800ms ease all;
     outline: none;
+  }
+  .todo-form {
+    background-color: white;
+    width: 23rem;
+    height: 33rem;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.556);
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
   }
 }
 
@@ -128,4 +142,17 @@ button:hover:before,
 button:hover:after {
   width: 100%;
   transition: 800ms ease all;
+}
+
+.todo-form {
+  background-color: white;
+  width: 40rem;
+  height: 50rem;
+  margin: 0 auto;
+  text-align: center;
+  border-radius:10px;
+  border: 2px solid rgba(0, 0, 0, 0.556);
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
