@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Form extends Component {
     render() {
         return (
-            <div className="todo-form">
+            <div className="form">
                 <h1>Add Todo</h1>
                 <form>
                     <input placeholder="Add todo here"/>
