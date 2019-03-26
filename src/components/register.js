@@ -23,7 +23,7 @@ export default class Register extends Component {
     handleSubmit = (e) => {
         e.preventDefault()
 
-        adapters.createUser(this.state.username, this.state.password)
+        adapters.loginUser(this.state.username, this.state.password)
 
     }
 
@@ -34,10 +34,10 @@ export default class Register extends Component {
                 <h1>Register</h1>
                 <form onSubmit={this.handleSubmit}>
                     <p>
-                        Create Username: <input onChange={this.usernameChange} value={this.state.username} />
+                        Create Username:<input onChange={this.usernameChange} value={this.state.username} />
                     </p>
                     <p>
-                        Create Password: <input onChange={this.passwordChange} value={this.state.password}  />
+                        Create Password:<input onChange={this.passwordChange} value={this.state.password}  />
                     </p>
                     <p>
                         <button type="submit">Submit</button>

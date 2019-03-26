@@ -92,10 +92,12 @@ body {
   text-align: center;
   background-color: black;
   color: white;
-  width: 25rem;
+  width: 30rem;
   text-align: center;
   margin: 1rem auto;
   padding: 2px auto;
+  display: flex;
+  
 }
 
 button {

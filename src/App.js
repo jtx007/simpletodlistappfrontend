@@ -4,6 +4,7 @@ import List from './components/list'
 import Form from './components/form'
 import Register from './components/register'
 import Login from './components/login'
+import ListForm from './components/createListForm'
 import './App.css';
 
 class App extends Component {
@@ -12,13 +13,15 @@ class App extends Component {
     todoForm: false,
     registerForm: false,
     loginForm: false,
+    listForm: false
   }
 
   todoForm = () => {
     this.setState((prevState) => ({
       todoForm: !prevState.todoForm,
       registerForm: false,
-      loginForm: false
+      loginForm: false,
+      listForm: false
     }))
   }
 
@@ -26,7 +29,8 @@ class App extends Component {
     this.setState((prevState) => ({
       registerForm: !prevState.registerForm,
       loginForm: false,
-      todoForm: false
+      todoForm: false,
+      listForm: false
     }))
   }
 
@@ -34,8 +38,17 @@ class App extends Component {
     this.setState((prevState) => ({
       loginForm: !prevState.loginForm,
       registerForm: false,
-      todoForm: false
+      todoForm: false,
+      listForm: false
+    }))
+  }
 
+  listForm = () => {
+    this.setState((prevState) => ({
+      listForm: !prevState.listForm,
+      registerForm: false,
+      loginForm: false,
+      todoForm: false
     }))
   }
 
@@ -46,6 +59,8 @@ class App extends Component {
       return <Register />
     } else if (this.state.loginForm) {
       return <Login />
+    } else if (this.state.listForm) {
+      return <ListForm />
     } else {
       return <List />
     }
@@ -56,7 +71,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Navbar todoForm={this.todoForm} registerForm={this.registerForm} loginForm={this.loginForm} />
+        <Navbar listForm={this.listForm} todoForm={this.todoForm} registerForm={this.registerForm} loginForm={this.loginForm} />
         {this.formRender()}
         
         
